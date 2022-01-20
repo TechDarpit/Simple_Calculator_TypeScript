@@ -1,0 +1,27 @@
+.header {
+  margin: 20px 60px;
+  padding: 10px 0px 5px 0px;
+}
+
+.footer {
+  margin: 30px 60px 10px 60px;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  margin: 20px auto;
+  width: 70%;
+  border: 2px solid #212529;
+  border-radius: 10px;
+  /* background-color: blanchedalmond; */
+}
+
+.row {
+  margin: 20px auto;
+}
+
+.btn{
+  width: 100%;
+}
