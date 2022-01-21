@@ -34,7 +34,7 @@ var OutputMode;
 })(OutputMode || (OutputMode = {}));
 function printResult(result, printMode) {
     if (printMode === OutputMode.CONSOLE) {
-        console.log(result);
+        // console.log(result);
         resultLable.innerHTML = "Result: ".concat(result);
     }
     else if (printMode === OutputMode.ALERT) {
@@ -43,9 +43,9 @@ function printResult(result, printMode) {
 }
 buttonElement.addEventListener("click", function () {
     var num1 = +num1Input.value;
-    console.log("num1 = " + num1);
+    // console.log("num1 = " + num1);
     var num2 = +num2Input.value;
-    console.log("num2 = " + num2);
+    // console.log("num2 = " + num2);
     var op = operator.value;
     var result = calculateResult(num1, num2, op);
     if (typeof result == "string") {

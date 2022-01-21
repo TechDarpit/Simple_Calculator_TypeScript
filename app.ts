@@ -35,7 +35,7 @@ enum OutputMode {
 
 function printResult(result: string | number, printMode: OutputMode) {
   if (printMode === OutputMode.CONSOLE) {
-    console.log(result);
+    // console.log(result);
     resultLable.innerHTML = `Result: ${result}`;
   } else if (printMode === OutputMode.ALERT) {
     alert(result);
@@ -44,9 +44,9 @@ function printResult(result: string | number, printMode: OutputMode) {
 
 buttonElement.addEventListener("click", () => {
   const num1 = +num1Input.value;
-  console.log("num1 = " + num1);
+  // console.log("num1 = " + num1);
   const num2 = +num2Input.value;
-  console.log("num2 = " + num2);
+  // console.log("num2 = " + num2);
   const op = operator.value;
   const result: number | string = calculateResult(num1, num2, op);
   if (typeof result == "string") {
