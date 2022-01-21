@@ -13,7 +13,9 @@ function calculateResult(num1: number, num2: number, op: string) {
     case "*":
       return num1 * num2;
     case "/":
-      return num1 / num2;
+      return +(num1 / num2).toFixed(2);
+    case "%":
+      return (num1 % num2);
     default:
       return "Invalide Operator, Please select valid operator.";
   }
